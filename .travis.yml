@@ -1,0 +1,13 @@
+language: ruby
+cache: bundler
+sudo: false
+rvm:
+  - 2.3
+  - 2.4
+  - ruby-head
+script:
+  - bin/rake test
+  - bin/rubocop -D
+matrix:
+  allow_failures:
+    - rvm: ruby-head
