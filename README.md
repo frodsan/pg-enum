@@ -1,4 +1,4 @@
-# PgEnum
+# PgEnum [![Build Status](https://travis-ci.org/frodsan/pg-enum.svg)](https://travis-ci.org/frodsan/pg-enum)
 
 Add support for Postgres (enum)erated types to Active Record
 
