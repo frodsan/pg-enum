@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name          = "pg-enum"
-  s.version       = "0.0.1"
+  s.version       = "1.0.0"
   s.author        = "Francesco Rodríguez"
   s.email         = "frodsan@protonmail.com"
 
