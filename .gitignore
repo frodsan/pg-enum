@@ -4,6 +4,7 @@
 /_yardoc/
 /coverage/
 /doc/
+/test/log/
 /pkg/
 /spec/reports/
 /tmp/
