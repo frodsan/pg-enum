@@ -8,4 +8,4 @@
 /pkg/
 /spec/reports/
 /tmp/
-.rubocop*
+.rubocop-*
