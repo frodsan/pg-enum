@@ -15,6 +15,8 @@ module PgEnum
 
   class_methods do
     def pg_enum(attr, options = {})
+      return unless table_exists?
+
       column = columns_hash[attr.to_s]
 
       if column.nil? || column.type != :enum
