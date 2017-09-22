@@ -2,6 +2,7 @@
 
 require "bundler/setup"
 require "active_record"
+require "rails"
 require "pg"
 require "minitest/autorun"
 require_relative "../lib/pg_enum"
@@ -31,6 +32,13 @@ ActiveRecord::Schema.define do
     t.column :status, :conversation_status, default: "active"
   end
 end
+
+class Application < Rails::Application
+  config.eager_load = false
+  config.root = File.dirname(__FILE__)
+end
+
+Application.initialize!
 
 class Conversation < ActiveRecord::Base
   include PgEnum
